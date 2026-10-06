@@ -18,9 +18,9 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano_v2/zmk
     shield: corne_tp_left
-  - board: nice_nano_v2
+  - board: nice_nano_v2/zmk
     shield: corne_tp_right
 
   # Alternative PINs firmware
@@ -29,7 +29,7 @@ include:
   # uses the high frequency pins D1 for SCL and D2 for SDA.
   #
   # You can remove this entry in your own zmk-config.
-  - board: nice_nano_v2
+  - board: nice_nano_v2/zmk
     shield: corne_tp_right
     cmake-args: -DDTS_EXTRA_CPPFLAGS=-DMOUSE_PS2_ALT_PINS
     artifact-name: corne_tp_right-nice_nano_v2-scl_D1_sda_D0-zmk
@@ -41,5 +41,5 @@ include:
   #
   # More info:
   # https://zmk.dev/docs/troubleshooting#split-keyboard-halves-unable-to-pair
-  - board: nice_nano_v2
+  - board: nice_nano_v2/zmk
     shield: settings_reset
