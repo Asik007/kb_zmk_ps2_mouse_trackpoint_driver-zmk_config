@@ -1,5 +1,8 @@
 on: [push, pull_request, workflow_dispatch]
 
+permissions:
+  contents: read
+
 jobs:
   build:
     uses: infused-kim/zmk/.github/workflows/build-user-config.yml@pr-testing/mouse_ps2_module_base
